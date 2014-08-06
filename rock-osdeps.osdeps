@@ -75,8 +75,8 @@ drivers/aravis:
   debian,ubuntu: rock-drivers-aravis
 drivers/camera_aravis:
   debian,ubuntu: rock-drivers-camera-aravis
-drivers/video_streamer_vlc:
-  debian,ubuntu: rock-drivers-video-streamer-vlc
+#drivers/video_streamer_vlc:
+#  debian,ubuntu: rock-drivers-video-streamer-vlc
 external/aruco:
   debian,ubuntu: rock-external-aruco
 external/lemon:
@@ -167,8 +167,8 @@ drivers/phidgets:
   debian,ubuntu: rock-drivers-phidgets
 control/reflexxes:
   debian,ubuntu: rock-control-reflexxes
-drivers/actuator_dispatcher:
-  debian,ubuntu: rock-drivers-actuator-dispatcher
+#drivers/actuator_dispatcher:
+#  debian,ubuntu: rock-drivers-actuator-dispatcher
 bundles/rock_ugv_nav:
   debian,ubuntu: ruby-bundles-rock-ugv-nav
 control/kdl:
@@ -203,8 +203,8 @@ drivers/parport:
   debian,ubuntu: rock-drivers-parport
 drivers/camera_interface:
   debian,ubuntu: rock-drivers-camera-interface
-drivers/camera_prosilica:
-  debian,ubuntu: rock-drivers-camera-prosilica
+#drivers/camera_prosilica:
+#  debian,ubuntu: rock-drivers-camera-prosilica
 drivers/camera_usb:
   debian,ubuntu: rock-drivers-camera-usb
 drivers/dvl_teledyne:
@@ -257,16 +257,16 @@ slam/odometry:
   debian,ubuntu: rock-slam-odometry
 slam/graph_slam:
   debian,ubuntu: rock-slam-graph-slam
-slam/g2o:
-  debian,ubuntu: rock-slam-g2o
+#slam/g2o:
+#  debian,ubuntu: rock-slam-g2o
 drivers/orogen/camera_aravis:
   debian,ubuntu: rock-drivers-orogen-camera-aravis
 multiagent/orogen/fipa_services:
   debian,ubuntu: rock-multiagent-orogen-fipa-services
 planning/orogen/motion_planning_libraries:
   debian,ubuntu: rock-planning-orogen-motion-planning-libraries
-drivers/orogen/video_streamer_vlc:
-  debian,ubuntu: rock-drivers-orogen-video-streamer-vlc
+#drivers/orogen/video_streamer_vlc:
+#  debian,ubuntu: rock-drivers-orogen-video-streamer-vlc
 image_processing/orogen/projection:
   debian,ubuntu: rock-image-processing-orogen-projection
 image_processing/orogen/virtual_view:
@@ -371,8 +371,8 @@ drivers/orogen/wifimon:
   debian,ubuntu: rock-drivers-orogen-wifimon
 drivers/orogen/camera_base:
   debian,ubuntu: rock-drivers-orogen-camera-base
-drivers/orogen/camera_prosilica:
-  debian,ubuntu: rock-drivers-orogen-camera-prosilica
+#drivers/orogen/camera_prosilica:
+#  debian,ubuntu: rock-drivers-orogen-camera-prosilica
 drivers/orogen/fog_kvh:
   debian,ubuntu: rock-drivers-orogen-fog-kvh
 drivers/orogen/dvl_teledyne:
@@ -437,7 +437,7 @@ tutorials/orogen/message_producer:
   debian,ubuntu: rock-tutorials-orogen-message-producer
 tutorials/orogen/message_consumer:
   debian,ubuntu: rock-tutorials-orogen-message-consumer
-external/ode:
-  debian,ubuntu: rock-external-ode
-simulation/orogen/mars_core:
-  debian,ubuntu: rock-simulation-orogen-mars-core
+#external/ode:
+#  debian,ubuntu: rock-external-ode
+#simulation/orogen/mars_core:
+#  debian,ubuntu: rock-simulation-orogen-mars-core
