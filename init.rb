@@ -16,7 +16,7 @@ if (Autoproj.user_config('use_deb')) then
 	Autobuild.env_add_path('OROGEN_PLUGIN_PATH','/opt/rock/share/orogen/plugins')
 	Autobuild.env_add_path('RUBYLIB','/opt/rock/lib/ruby/1.9.1/i686-linux')
 		if !File.exist?("/etc/apt/sources.list.d/rock.list")
-		system("sudo sh -c \"echo 'deb http://rimres-gcs2-u/release/master master main' > /etc/apt/sources.list.d/rock.list\"")
+		system("sudo sh -c \"echo 'deb http://rimres-gcs2-u/release/stable stable main' > /etc/apt/sources.list.d/rock.list\"")
 		system("wget http://rimres-gcs2-u/conf/Rock-debian.gpg.key")
 		system("sudo apt-key add Rock-debian.gpg.key < Release.key") 
 		system("sudo apt-get update > /dev/null")
