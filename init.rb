@@ -77,13 +77,14 @@ if Autoproj.user_config('DEB_USE')
 
         Autobuild.env_add_path('PATH',File.join(release_install_dir,"bin"))
         Autobuild.env_add_path('CMAKE_PREFIX_PATH',release_install_dir)
-        Autobuild.env_add_path('PKG_CONFIG_PATH',File.join("/usr/share/","pkgconfig"))
-        Autobuild.env_add_path('PKG_CONFIG_PATH',File.join("/usr/lib/","pkgconfig"))
-        Autobuild.env_add_path('PKG_CONFIG_PATH',File.join("/usr/lib/",architecture,"pkgconfig"))
         Autobuild.env_add_path('PKG_CONFIG_PATH',File.join(release_install_dir,"lib","pkgconfig"))
         Autobuild.env_add_path('PKG_CONFIG_PATH',File.join(release_install_dir,"lib",architecture, "pkgconfig"))
         Autobuild.env_add_path('PKG_CONFIG_PATH',File.join(ENV['AUTOPROJ_CURRENT_ROOT'],"install","lib","pkgconfig"))
-
+        #add system pkgconfig paths (workaraound for utilmm bug on ubuntu 16.04)
+        Autobuild.env_add_path('PKG_CONFIG_PATH',File.join("/usr/share/","pkgconfig"))
+        Autobuild.env_add_path('PKG_CONFIG_PATH',File.join("/usr/lib/","pkgconfig"))
+        Autobuild.env_add_path('PKG_CONFIG_PATH',File.join("/usr/lib/",architecture,"pkgconfig"))
+            
         # RUBY SETUP
         Autobuild.env_add_path('RUBYLIB',rock_ruby_archdir)
         Autobuild.env_add_path('RUBYLIB',rock_ruby_vendordir)
@@ -102,6 +103,7 @@ if Autoproj.user_config('DEB_USE')
         Autobuild.env_add_path('LD_LIBRARY_PATH',File.join(release_install_dir,"lib"))
         Autobuild.env_add_path('OROGEN_PLUGIN_PATH', File.join(release_install_dir,"/share/orogen/plugins"))
         Autobuild.env_add_path('TYPELIB_RUBY_PLUGIN_PATH', File.join(release_install_dir,"/share/typelib/ruby"))
+
         # gui/vizkit3d specific settings
         Autobuild.env_add_path('QT_PLUGIN_PATH', File.join(release_install_dir, "/lib/qt"))
         Autobuild.env_add_path('VIZKIT_PLUGIN_RUBY_PATH', File.join(release_install_dir, "/lib/vizkit"))
